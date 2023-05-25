@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+<h1>Movies catalog</h1>
+
+{% for key, m in movies.items %}
+    <h3>{{m.title}}</h2>
+    <p>Director: {{m.director}}</p>
+    <p>Sypnosis: {{m.sypnosis}}</p>
+    <p>Genres: {{m.genres}}</p>
+{% endfor %}
+
+{% endblock %}
